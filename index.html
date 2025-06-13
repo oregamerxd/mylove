@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>❤️Sabrina e Henrique ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Áudio (escondido) -->
+  <audio id="bgMusic" src="assets/audio/love-song.mp3" preload="auto" loop></audio>
+  
+  <!-- Tela de boas-vindas -->
+  <div id="welcome-screen" class="welcome-screen">
+    <button id="startBtn" class="start-button"><span>❤️</span>Click Aqui ❤️</button>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div id="content" class="hidden">
+    <!-- Player de música estilo Spotify -->
+    <div class="spotify-player">
+      <div class="player-content">
+        <div class="album-cover">
+          <img src="assets/images/spotify-player.png" alt="Album Cover">
+        </div>
+        <div class="song-info">
+          <div class="marquee-container">
+            <div class="marquee-text">The Lazy Song</div>
+          </div>
+          <p>Bruno Mars</p>
+        </div>
+        <div class="player-controls">
+          <button id="playPauseBtn" class="play-pause-btn">
+            <i class="fas fa-pause"></i>
+          </button>
+        </div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+
+    <!-- Animação de corações caindo -->
+    <div class="hearts"></div>
+
+    <!-- Slideshow de fotos -->
+    <div class="photo-slideshow">
+      <div class="photo-frame">
+        <img src="assets/images/photo1.jpg" id="slideshow-img" alt="Foto do Casal">
+      </div>
+      <div class="slideshow-pagination" id="slideshow-pagination">
+        <!-- Pagination dots will be added by JavaScript -->
+      </div>
+    </div>
+    
+    <!-- Título romântico -->
+    <h2 class="love-title">❤️ Eu te amo há:</h2>
+    
+    <!-- Contador de tempo juntos -->
+    <div class="timer-container">
+      <div class="timer" id="timer"></div>
+    </div>
+
+    <!-- Texto romântico -->
+    <div class="message-container">
+      <p class="message">
+        A cada dia que passa, meu coração se enche mais de carinho e admiração por você. 
+        Cada momento ao seu lado é um presente que guardo com todo o amor. 
+        Obrigado por fazer parte da minha história e por construir comigo 
+        memórias tão especiais que levarei para sempre em meu coração.
+      </p>
+    </div>
+  </div>
+
+  <!-- Áudio -->
+  <audio id="bgMusic" loop>
+    <source src="assets/audio/love-song.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
